@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+    <title>Visualizations</title>
+</head>
+
+<body>
+    <!-- Using bootstrap for navbar logo "Dashboard" -->
+    <nav class="navbar navbar-expand-lg wine-background-text">
+        <a class="navbar-brand mr-auto" href="/visualizations" style="color:seashell">
+            <strong>Visualizations</strong>
+        </a>
+        <!-- Adding a colapsible button as screen size decreases -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar nav ml-auto">
+                <!-- Links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/" style="color:seashell">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wine_measurements" style="color:seashell">Wine Measurements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project_design" style="color:seashell">Project Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/data" style="color:seashell">Dataset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/visualizations" style="color:seashell">Visualizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/analysis" style="color:seashell">Analysis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/prediction" style="color:seashell">Model Prediction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resources" style="color:seashell">Resources</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+
+
+    <div class="container">
+        <!-- Unordered list of resources for the dataset -->
+        <div class="row">
+            <div class="col-md-12 body-section">
+                <h3>Visualizations of Data Composition (Tableau)</h3>
+                <br>
+                <!-- Embedding Tableu Story -->
+                <div class='tableauPlaceholder' id='viz1623287377140' style='position: relative'><noscript><a href='#'><img alt='Wine Data Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WG&#47;WGXNCXS6D&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;WGXNCXS6D' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WG&#47;WGXNCXS6D&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1623287377140');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

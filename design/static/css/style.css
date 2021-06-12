@@ -1,0 +1,127 @@
+.wine-text {
+  background-image: linear-gradient(to left, indigo, rgb(84, 6, 84),rgb(165, 16, 165), violet);   -webkit-background-clip: text;
+  color: transparent;
+}
+
+.wine-background-text {
+  background-image: linear-gradient(
+    to right,
+    indigo,
+    rgb(84, 6, 84),
+    rgb(165, 16, 165), 
+    violet
+  );
+}
+
+.intro-section {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.body-section {
+  margin-top: 100px;
+}
+.well {
+  background-color: rgb(165, 16, 165);
+  border:1px solid #e3e3e3;
+}
+
+html, body, #container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Style for Slider on Model Predictions*/
+
+.container {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: rgb(84, 6, 84); /* Green background */
+    cursor: pointers; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 10px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: rgb(84, 6, 84); /* Green background */
+    cursor: pointers; /* Cursor on hover */
+  }
+
+/* BELOW NOT NEEDED FOR THIS PROJECT  */
+/*Style for Leaflet map */
+/* NOT NEEDED
+.leaflet-popup-content {
+  text-align: center;
+} */
+  /* CSS copy from the Leaflet-Choropleth documentation */
+/*NOT NEEDED   
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.legend .max {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+} */

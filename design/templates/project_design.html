@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <title>Project Design</title>
+</head>
+
+<body>
+    <!-- Using bootstrap for navbar logo "Dashboard" -->
+    <nav class="navbar navbar-expand-lg wine-background-text">
+        <a class="navbar-brand mr-auto" href="/project_design" style="color:seashell">
+            <strong>Project Design</strong>
+        </a>
+        <!-- Adding a colapsible button as screen size decreases -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar nav ml-auto">
+                <!-- Links -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/" style="color:seashell">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wine_measurements" style="color:seashell">Wine Measurements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project_design" style="color:seashell">Project Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/data" style="color:seashell">Dataset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/visualizations" style="color:seashell">Visualizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/analysis" style="color:seashell">Analysis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/prediction" style="color:seashell">Model Prediction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resources" style="color:seashell">Resources</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Unordered list of resources for the dataset -->
+        <div class="row">
+            <div class="col-md-12 body-section">
+                <h3>Project Design for Project 3: Wine Quality Data</h3>
+                <br>
+                <h4>Overview</h4>
+                    <p>Let’s talk about wine quality! What makes a good wine? We know everyone has 
+                        their own particular wine preferences, but are there any scientific measures 
+                        that indicate a good or bad wine? If so, what are the max and min acceptable 
+                        ranges for different measures to still have a good wine? Which measures are 
+                        more important for the overall quality score versus the ones that don’t affect 
+                        it too much? And what does the user’s preference for wine type say about their 
+                        taste in wine quality?
+ 
+                    </p>
+                <br>
+                <h4>Data</h4>
+                    <p>Our data measured a number of things for each wine: </p>
+                <ul>
+                    <li>Fixed acidity</li>
+                    <li>Volatile acidity</li>
+                    <li>Citric acid</li>
+                    <li>Residual sugar</li>
+                    <li>Chlorides</li>
+                    <li>Free sulfur dioxide</li>
+                    <li>Total sulfur dioxide</li>
+                    <li>Density</li>
+                    <li>pH</li>
+                    <li>Sulphates</li>
+                    <li>Alcohol</li>
+                    <li>Output variable (based on sensory data): Quality Score (score between 0 and 10)</li>
+                </ul>
+                <p>Each of these categories is a numberical value, which are then used to determine the Quality Score. </p>
+                <br>
+                <h4>Data Sources</h4>
+                  <p>Our data comes from a University of Californa - Irvine study done on wine quality from 2009, source data and information can be found on the <a href="resources.html">Resources page</a> as well as in our "data" folder of the repo.</p>
+                <br>
+                <h4>Project Artifacts</h4>
+                    <p>The “ML Wine Quality” folder, which includes:
+                    </p>
+                <ul>
+                    <li>Final Whites RF Project-3 June2021.pkl, which is our pycaret model</li>
+                    <li>linear_regression_ML.ipynb, which were our linear regressions that we did not end up using</li>
+                    <li>logs.log, which are our logs from routes on the website</li>
+                    <li>reds_category_ML.ipynb, which is the ML for reds where we were only able to create and tune, but not finalize the data because of the model</li>
+                    <li>whites_category_ML.ipynb, which is the ML for whites</li>
+                    <li>wines_dataframes.ipynb, which was our file that imported the tables from SQL into Pandas</li>
+                </ul>
+                    <p>The “data” folder, which includes all of the .csv files we used in importing to SQL, Pandas, and our site:</p>
+                <ul>
+                    <li>reds_df.csv</li>
+                    <li>whites_df.csv</li>
+                    <li>winequality-TOTAL.csv</li>
+                    <li>winequality-red-BROKENUP.csv</li>
+                    <li>winequality-red-updated.csv</li>
+                    <li>winequality-white-BROKENUP.csv</li>
+                    <li>Winequality-white-updated.csv</li>
+                </ul>  
+                    <p>The “database” folder, which includes:</p>
+                <ul>
+                    <li>database_build.sql, which was our SQL file that created the tables and imported the data that we used to then import to Pandas</li>
+                </ul>  
+                <p>The “design” folder, includes:</p>
+                <ul>
+                    <li>Final Whites RF Project-3 June2021.pkl, which is our pycaret model</li>
+                    <li>app_ISD.py, which is our set up of Flask for the website</li>
+                    <li>logs.log, which are our logs from routes on the website</li>
+                </ul>  
+                <p>Within the “design” folder, the “static” folder includes:</p>
+                <ul>
+                    <li>Class Report.png, a picture of a visualization for our analysis page</li>
+                    <li>Feature Importance.png, a picture of a visualization for our analysis page</li>
+                    <li>data_table.js, a javascript file used to create the selectors and table on the dataset page</li>
+                    <li>model_accuracy.png, a picture of a visualization for our analysis page</li>
+                    <li>pycaretLogo.png, a picture of a visualization for our analysis page</li>
+                    <li>rf_accuracy.png, a picture of a visualization for our analysis page</li>
+                    <li>wine_pic.jpg, a picture for our overview page</li>
+                    <li>winequality-TOTAL.csv</li>
+                </ul>  
+                <p>Within the “static” folder within the “design” folder, the “css” folder includes:</p>
+                <ul>
+                    <li>sliderstyle.css, which styles the sliders on the model prediction page</li>
+                    <li>style.css, which styles the website </li>
+                </ul>  
+                <p>Within the “design” folder, the “templates” folder includes:</p>
+                <ul>
+                   <li>analysis.html, which calls the .png files from the "output" folder</li>
+                    <li>data.html, which codes for the dataset page of the website and codes for its table</li>
+                    <li>index.html, which codes for the wine quality overview page of the website</li>
+                    <li>predict_ISD.html, which codes for the model predictions page of the website</li>
+                    <li>project_design.html, which codes for the project design page of the website</li>
+                    <li>resources.html, which codes for the resources page of the website</li>
+                    <li>visualizations.html, which codes for the visualizations page of the website</li>
+                    <li>wine_measurements.html, which codes for the wine measurements page of the website</li>
+                </ul>            
+                <br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>                   
